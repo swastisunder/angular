@@ -1,0 +1,48 @@
+:host {
+  display: block;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+.card ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  color: #cbd5e1;
+}
+
+.card li::marker {
+  color: #38bdf8;
+}

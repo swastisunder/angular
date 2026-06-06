@@ -1,0 +1,15 @@
+<h1>Loops</h1>
+
+@for (user of users; track user.id; let i = $index) {
+  <div class="card">
+    <span>{{ i + 1 }}</span>
+    <h2>{{ user.name }}</h2>
+    <p>Age: {{ user.age }}</p>
+    <p>City: {{ user.city }}</p>
+    <ul>
+      @for (hobby of user.hobbies; track hobby) {
+        <li>{{ hobby }}</li>
+      }
+    </ul>
+  </div>
+}
