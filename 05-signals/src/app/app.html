@@ -1,0 +1,37 @@
+<div class="signal-section">
+  <h1>Signals Demo</h1>
+
+  <div class="signal-controls">
+    <button (click)="dec()">Decrement</button>
+
+    <h2>{{ count() }}</h2>
+
+    <button (click)="inc()">Increment</button>
+  </div>
+</div>
+
+<hr />
+
+<div class="signal-section">
+  <h1>Different Data Types Signals</h1>
+
+  <h2>{{ data() }}</h2>
+
+  <button (click)="updateData()">Update Data</button>
+</div>
+
+<hr />
+
+<div class="signal-section">
+  <h1>Computed Signals</h1>
+
+  <h2>A: {{ a() }}</h2>
+  <h2>B: {{ b() }}</h2>
+  <h2>Sum: {{ sum() }}</h2>
+
+  <input #ainp type="number" placeholder="Enter value of A" [value]="a()" />
+
+  <input #binp type="number" placeholder="Enter value of B" [value]="b()" />
+
+  <button (click)="calSum(ainp, binp)">Calculate Sum</button>
+</div>

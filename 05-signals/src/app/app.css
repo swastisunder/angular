@@ -1,0 +1,74 @@
+:host {
+  display: block;
+}
+
+.signal-section {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.signal-section h1 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.signal-section h2 {
+  margin-bottom: 0.75rem;
+  color: #38bdf8;
+}
+
+.signal-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #334155;
+}
