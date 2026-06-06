@@ -1,0 +1,23 @@
+<div class="counter">
+  <div class="counter__header">
+    <h1 class="counter__title">Counter</h1>
+  </div>
+
+  <div class="counter__body">
+    <h2 class="counter__value">Count: {{ count }}</h2>
+  </div>
+
+  <div class="counter__actions">
+    <button
+      class="counter__button counter__button--decrement"
+      (click)="dec()"
+      [disabled]="count === 0"
+    >
+      Dec
+    </button>
+
+    <button class="counter__button counter__button--reset" (click)="reset()">Reset</button>
+
+    <button class="counter__button counter__button--increment" (click)="inc()">Inc</button>
+  </div>
+</div>
