@@ -16,3 +16,29 @@
 } @else {
   <div class="box black"></div>
 }
+
+<hr />
+
+<h1>Switch</h1>
+
+<button (click)="color = 1">RED</button>
+<button (click)="color = 2">BLUE</button>
+<button (click)="color = 3">GREEN</button>
+<button (click)="color = 4">BLACK</button>
+
+<input type="text" placeholder="Enter number 1 to 4" (input)="handelInput($event)" />
+
+@switch (color) {
+  @case (1) {
+    <div class="box red"></div>
+  }
+  @case (2) {
+    <div class="box blue"></div>
+  }
+  @case (3) {
+    <div class="box green"></div>
+  }
+  @default {
+    <div class="box black"></div>
+  }
+}
