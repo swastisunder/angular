@@ -1,0 +1,7 @@
+<h1>Name: {{ name }}</h1>
+
+<input #inp type="text" name="name" id="name" placeholder="Enter name" />
+<br /><br />
+<button (click)="handleSumbit($event, inp)">Submit</button>
+<br /><br />
+<button (click)="setInp(inp)">Set</button>
