@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.counter {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.counter__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.counter__value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 2rem;
+}
+
+.counter__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.counter__button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.counter__button:hover {
+  transform: translateY(-2px);
+}
+
+.counter__button:active {
+  transform: scale(0.95);
+}
+
+.counter__button--decrement {
+  background: #ef4444;
+  color: #fff;
+}
+
+.counter__button--reset {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.counter__button--increment {
+  background: #22c55e;
+  color: #fff;
+}
+
+.counter__button--decrement:hover {
+  background: #dc2626;
+}
+
+.counter__button--reset:hover {
+  background: #d97706;
+}
+
+.counter__button--increment:hover {
+  background: #16a34a;
+}
