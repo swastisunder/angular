@@ -6,6 +6,9 @@ node_modules/
 dist/
 out-tsc/
 
+a.js
+allCode.txt
+
 # Build output
 build/
 
