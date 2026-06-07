@@ -1,0 +1,12 @@
+<h1>OMG</h1>
+
+<button (click)="getProductData()">Get Data</button>
+
+<div class="product-container">
+  @for (p of productData; track p.name) {
+    <div class="product">
+      <h2>name: {{ p.name }}</h2>
+      <h2>brand: {{ p.brand }}</h2>
+    </div>
+  }
+</div>
