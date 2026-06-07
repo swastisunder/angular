@@ -1,0 +1,32 @@
+.navbar {
+  background: #111827;
+  border-bottom: 1px solid #334155;
+  height: 80px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  color: #38bdf8;
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+a {
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+a:hover,
+.active {
+  color: #38bdf8;
+}
