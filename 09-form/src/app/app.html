@@ -1,0 +1,12 @@
+<h1>Home</h1>
+
+<h2>Name : {{ profileForm.value.name }}</h2>
+<h2>Name : {{ profileForm.value.password }}</h2>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <input type="text" name="" id="" placeholder="Name" formControlName="name" />
+  <br /><br />
+  <input type="text" name="" id="" placeholder="Password" formControlName="password" />
+  <br /><br />
+  <button>Login</button>
+</form>
