@@ -1,0 +1,6 @@
+<app-user [userName]="userName"></app-user>
+
+<select #userSelect (change)="onSelect(userSelect.value)" name="userName">
+  <option value="ssb">SSB</option>
+  <option value="om">OM</option>
+</select>
