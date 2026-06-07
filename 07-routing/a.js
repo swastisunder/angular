@@ -12,7 +12,7 @@ const OUTPUT_FILE = path.join(__dirname, 'allcode.txt');
 // ["js"] => only js
 // ["ejs", "css"] => only ejs and css
 
-const ALLOWED_EXTENSIONS = ['html', 'ts', 'css'];
+const ALLOWED_EXTENSIONS = ['html'];
 
 // ======================================
 // IGNORE CONFIG
